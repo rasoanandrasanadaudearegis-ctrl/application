@@ -1,0 +1,14 @@
+{
+  "name": "aro-rcc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ARO RCC — lancement simultané des serveurs backend et frontend",
+  "scripts": {
+    "dev": "concurrently --kill-others --names API,WEB --prefix-colors blue,magenta \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "dev:back": "npm --prefix backend run dev",
+    "dev:front": "npm --prefix frontend run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}

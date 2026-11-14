@@ -1,0 +1,28 @@
+{
+  "name": "aro-rcc-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node --max-old-space-size=2048 src/server.js",
+    "dev": "node --watch --max-old-space-size=2048 src/server.js",
+    "db:init": "node scripts/init-db.js",
+    "user": "node scripts/creer-utilisateur.js",
+    "migrer": "node scripts/migrer-depuis-mysql.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "multer": "^2.0.0",
+    "pg": "^8.13.1"
+  },
+  "optionalDependencies": {
+    "mysql2": "^3.11.3"
+  }
+}

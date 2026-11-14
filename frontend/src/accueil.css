@@ -1,0 +1,35 @@
+.acc { display: grid; gap: 18px; }
+
+.acc-hero { position: relative; overflow: hidden; border-radius: 12px; padding: 16px 22px; color: #fff;
+  background: linear-gradient(120deg, var(--couleur-primaire-fonce), var(--couleur-primaire)); }
+.acc-hero-txt { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.acc-hero h2 { margin: 0; font-size: 26px; font-weight: 700; color: #fff; text-align: right; letter-spacing: .01em; }
+@media (max-width: 640px) { .acc-hero h2 { font-size: 20px; text-align: left; } }
+.acc-salut { margin: 0; font-size: 22px; font-weight: 600; }
+
+.acc-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border-radius: 12px; overflow: hidden;
+  background: color-mix(in srgb, var(--couleur-accent) 14%, var(--couleur-carte));
+  border: 1px solid color-mix(in srgb, var(--couleur-accent) 45%, var(--couleur-carte)); }
+.acc-kpi { display: flex; align-items: center; gap: 14px; padding: 18px 20px; color: var(--couleur-texte);
+  border-left: 1px solid color-mix(in srgb, var(--couleur-accent) 35%, var(--couleur-carte)); }
+.acc-kpi:first-child { border-left: 0; }
+.acc-kpi-ico { flex: none; width: 40px; height: 40px; padding: 8px; border-radius: 50%; background: var(--couleur-carte);
+  fill: none; stroke: var(--couleur-primaire); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.acc-kpi small { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--couleur-discret); }
+.acc-kpi b { display: block; margin-top: 2px; font-size: 26px; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.acc-kpi.due b { color: var(--texte-succes); }
+.acc-kpi.ok b { color: var(--texte-succes); }
+.acc-kpi.acc-ar b { font-size: 20px; }
+.acc-kpi em { font-style: normal; font-size: 13px; color: var(--couleur-discret); }
+
+.acc-grille { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.acc-carte { position: relative; overflow: hidden; text-align: left; cursor: pointer; display: grid; gap: 4px; align-content: start;
+  padding: 12px 14px 28px; background: var(--couleur-carte); color: var(--couleur-texte); border: 1px solid var(--couleur-bordure);
+  border-radius: 12px; font: inherit; }
+.acc-carte:hover { border-color: var(--couleur-accent); }
+.acc-carte:focus-visible { outline: 2px solid var(--couleur-focus); outline-offset: 2px; }
+.acc-ico { width: 28px; height: 28px; fill: none; stroke: var(--couleur-primaire); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+  background: var(--couleur-survol); border-radius: 8px; padding: 5px; }
+.acc-carte strong { font-size: 14.5px; }
+.acc-carte span { color: var(--couleur-discret); font-size: 12.5px; line-height: 1.4; }
+.acc-fleche { position: absolute; right: 12px; bottom: 6px; font-style: normal; font-size: 17px; color: var(--couleur-primaire); }

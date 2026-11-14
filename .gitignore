@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# ARO RCC — fichiers locaux à ne jamais publier
+# ---------------------------------------------------------------------------
+
+# Dépendances (racine, backend et frontend)
+node_modules/
+
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+*.local
+
+# Artefacts de build et caches
+frontend/dist/
+dist/
+dist-ssr/
+coverage/
+.nyc_output/
+.cache/
+.vite/
+*.tsbuildinfo
+
+# Journaux et fichiers temporaires
+*.log
+*.log.*
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.pid
+*.tmp
+*.bak
+~$*
+
+# Données locales : imports RCC, archives et sauvegardes
+backend/uploads/*
+!backend/uploads/.gitkeep
+/*.xls*
+/*.zip
+sauvegardes/
+
+# Le modèle d'inventaire est un fichier source : il doit rester versionné.
+!backend/modele/modele_inventaire.xlsx
+
+# Système et éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Données clients et secrets : ne jamais publier
+aro_rcc/config.php
+aro_rcc/uploads/
+aro_rcc/rejets.txt
+*.xlsx
+*.pdf
+sauvegardes/
+
+# Dépendances et fichiers générés (se recréent tout seuls)
+aro_rcc/vendor/
+app_rcc/node_modules/
+app_rcc/dist/
+*.log
