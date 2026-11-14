@@ -10,6 +10,11 @@ const ETAT_INITIAL = { charge: false, utilisateur: null, doitChanger: false, err
 export default function Acces() {
   const [etat, setEtat] = useState(ETAT_INITIAL);
 
+
+
+
+  
+
   const verifier = useCallback(() => {
     setEtat(ETAT_INITIAL);
     fetch(`${API_URL}?action=moi`)
